@@ -1,0 +1,306 @@
+html,
+body, .content-wrapper, .xmodule_display.xmodule_VideoBlock, .video{
+    font-family: 'Circular Std' !important;
+    overflow-x: hidden !important;
+    margin: 0 !important;
+    border: 0;
+}
+
+html,
+body, .content-wrapper, .course-wrapper main, .xmodule_display.xmodule_VideoBlock, .video{
+ height: 100% !important;
+}
+
+.content-wrapper, .course-wrapper main{
+ background: #e5e5e5 !important;
+ padding: 0 !important;
+}
+
+p {
+    font-size: 14px !important;
+    line-height: 24px !important;
+    letter-spacing: -0.5px !important;
+    color: black !important;
+    padding: 0 12px !important;
+}
+
+p:not(:first-child) {
+    padding-top: 10px !important;
+}
+
+h2.unit-title {
+    font-family: 'Circular Std' !important;
+    font-style: normal !important;
+    font-size: 26px !important;
+    font-weight: bold !important;
+    font-feature-settings: "liga" !important;
+    margin-bottom: 20px !important;
+    color: #001F89 !important;
+    letter-spacing: -1px;
+    font-feature-settings: "liga" off !important;
+}
+
+h3.hd-2{
+    font-style: normal !important;
+    font-weight: 500 !important;
+    font-size: 20px !important;
+    line-height: 25px !important;
+    font-feature-settings: 'liga' off !important;
+    color: #fff !important;
+    background: #001F89 !important;
+    padding: 5px 10px !important;
+}
+.hd-5{
+color: #fff !important;
+}
+.xmodule_display.xmodule_VideoBlock .video{
+    background: #001F89 !important;
+    display: block;
+    padding: 40px 9px !important;
+    outline: none;
+    border-radius: 0 !important;
+    width: inherit !important;
+    height: 100% !important;
+}
+
+/* style video when expanded */
+.xmodule_display.xmodule_VideoBlock .video.video-fullscreen .tc-wrapper .video-wrapper object, .xmodule_display.xmodule_VideoBlock .video.video-fullscreen .tc-wrapper .video-wrapper iframe, .xmodule_display.xmodule_VideoBlock .video.video-fullscreen .tc-wrapper .video-wrapper video {
+    position: inherit !important;
+    width: auto !important;
+    height: auto !important;
+
+    height: inherit !important;
+    width: -webkit-fill-available !important;
+    /* top: auto; */
+    /* left: 0px; */
+}
+.xmodule_display.xmodule_VideoBlock .video.video-fullscreen .tc-wrapper .video-controls {
+    position: fixed !important;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+/* end of video style when expanded */
+
+video {
+    background: url(.jpg), #189AD1 !important;
+    border-radius: 25px !important;
+}
+.xmodule_display.xmodule_VideoBlock .video .video-wrapper{
+    margin: 0 !important;
+}
+
+.xmodule_display.xmodule_VideoBlock .video .video-wrapper .video-player {
+    overflow: hidden !important;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    p {
+      color: crimson;
+    }
+    html,
+    body {
+        overflow-x: none !important;
+    }
+
+    .audio_block {
+        position: absolute;
+        width: 100%;
+        height: 400px;
+        left: auto;
+        right: auto;
+        margin: -50px -10px;
+        background-image: url(https://images.pexels.com/photos/2065490/pexels-photo-2065490.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=11100);
+        /* background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center; */
+    }
+
+    .audio_block > audio {
+        height: 450px;
+        margin: 0 30px;
+        width: -webkit-fill-available;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    p {
+        color: green;
+    }
+
+    .audio_block{
+        position: absolute;
+        width: 100%;
+        left: 1px; 
+      }
+     .audio_block > audio{
+       width: 1050px;
+       height: 800px;
+       margin: 0 -2px;  
+     }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    p {
+        color: darkslategray;
+    }
+    .xmodule_display.xmodule_VideoBlock .video .video-wrapper .video-player {
+        position  : relative;
+        overflow  : hidden !important;
+    }
+    .audio_block{
+      position: absolute;
+      width: 740px;
+      height: 554px;
+      right: auto;
+      margin: 70px 10px 0px;  
+    }
+   .audio_block > audio{
+     width: 1050px;
+     height: 800px;
+     margin: 0 -2px;  
+   }
+    .audio_block > audio {
+        width: 1050px;
+        height: 800px;
+        margin: 0 -50px;
+    }
+
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    p {
+        color: orange;
+    }
+
+    .audio_block {
+        width: 920px;
+        height: 800px;
+        padding: 0 22px;
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    p {
+        color: pink;
+    }
+
+}
+.xmodule_display.xmodule_HtmlBlock * {
+    line-height: 1;
+}
+.course-wrapper .course-content .vert-mod .vert, .course-wrapper .courseware-results-wrapper .vert-mod .vert {
+    border-bottom: white !important;
+    margin-bottom: 15px;
+    padding: 0 0 15px;
+}
+
+/* Test your knowledge style*/
+.course-wrapper .course-content .xblock.xblock-student_view-vertical, .course-wrapper .course-content .xblock.xblock-public_view-vertical, .course-wrapper .courseware-results-wrapper .xblock.xblock-student_view-vertical, .course-wrapper .courseware-results-wrapper .xblock.xblock-public_view-vertical {
+    padding: 14px !important;
+}
+
+.xmodule_display.xmodule_HtmlBlock h2, h4:last-of-type {
+    font-family: 'Circular Std' !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-size: 13px !important;
+    line-height: 17px !important;
+    font-feature-settings: "liga" off !important;
+    color: #000000 !important;
+    /* border-left: 1px solid #c4c4c4 !important; */
+    margin: 0 !important;
+    padding: 8px !important;
+}
+
+.xmodule_display.xmodule_ProblemBlock div.problem .choicegroup label, .xmodule_display.xmodule_ProblemBlock div.problem .choicetextgroup label, .xmodule_display.xmodule_ConditionalModule div.problem .xmodule_display.xmodule_ProblemBlock .choicegroup label, .xmodule_display.xmodule_ConditionalModule div.problem .xmodule_display.xmodule_ProblemBlock .choicetextgroup label {
+    box-sizing: border-box;
+    display: inline-block;
+    clear: both;
+    margin-bottom: 10px;
+    border-radius: 8px !important;
+    padding: none !important;
+    background-color: #ffffff !important;
+}
+
+label{
+    font-family: 'Circular Std' !important;
+    font-style: normal !important;
+    font-weight: normal;
+    font-size: 18px !important;
+    line-height: 23px !important;
+    font-feature-settings: 'liga' off !important;      
+    color: #000000 !important;
+}
+
+.xmodule_display.xmodule_ConditionalModule div.problem .xmodule_display.xmodule_ProblemBlock .choicegroup input:focus+label, .xmodule_display.xmodule_ConditionalModule div.problem .xmodule_display.xmodule_ProblemBlock .choicetextgroup input:focus+label, .xmodule_display.xmodule_ProblemBlock div.problem .choicegroup input:focus+label, .xmodule_display.xmodule_ProblemBlock div.problem .choicetextgroup input:focus+label, .xmodule_display.xmodule_ConditionalModule div.problem .xmodule_display.xmodule_ProblemBlock .choicegroup input:hover+label, .xmodule_display.xmodule_ConditionalModule div.problem .xmodule_display.xmodule_ProblemBlock .choicetextgroup input:hover+label, .xmodule_display.xmodule_ProblemBlock div.problem .choicegroup input:hover+label, .xmodule_display.xmodule_ProblemBlock div.problem .choicetextgroup input:hover+label::selection{
+ background-color: #3684f1 !important;
+ color: #fff !important;
+ cursor: pointer !important;
+}
+
+.xblock-student_view-html > p{
+    margin: 0 0 0 10px !important;
+    font-family: 'Circular Std';
+   }
+
+.xblock-student_view-html > p {
+    /* border-left: 1px solid #c4c4c4 !important; */
+    margin: inherit !important;
+    /* font-family: 'Circular Std'; */
+}
+
+.hd-3 {
+    color: #3684f1 !important;
+    line-height: 23px !important;
+    font-size: 18px !important;
+    font-weight: normal !important;
+    font-style: normal !important;
+    font-family: 'Circular Std' !important;
+}
+
+.xmodule_display.xmodule_ProblemBlock div.problem-progress, p {
+    display: inline-block;
+    color: #5e5e5e;
+    font-size: 0.875em;
+    border-left: 1px solid #c4c4c4 !important;
+    padding: 10px !important;
+}
+.xmodule_display.xmodule_ProblemBlock div.problem-progress, p {
+   border-left: none !important;
+}
+
+.xmodule_display.xmodule_ProblemBlock div.problem .choicegroup input[type="radio"], .xmodule_display.xmodule_ProblemBlock div.problem .choicegroup input[type="checkbox"] {
+    left: 0.5625em;
+    position: absolute;
+    top: 0.5625em;
+    width: 22px;
+    height: 22px;
+    z-index: 1;
+    display: none !important;
+}
+/* End of test your knowledge style */
+
+/* Syle Audio content */
+#content.content-wrapper.main-container{
+    background: radial-gradient( circle at top right, #16222A, #3A6073 ) !important;
+}
+.courseware-results-wrapper{
+    background: radial-gradient( circle at top right, #16222A, #3A6073 ) !important;
+}
+.audio_block {
+    background-image: url(https://images.pexels.com/photos/2065490/pexels-photo-2065490.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=11100);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+/* End of Audio content style */
+
+p:empty {
+    display: none;
+}
