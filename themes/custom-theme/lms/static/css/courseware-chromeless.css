@@ -12,8 +12,8 @@ body, .content-wrapper, .course-wrapper main, .xmodule_display.xmodule_VideoBloc
 }
 
 .content-wrapper, .course-wrapper main{
- background: #e5e5e5 !important;
- padding: 0 !important;
+  background: #e5e5e5 !important;
+  padding: 0 !important;
 }
 
 p {
@@ -68,11 +68,8 @@ color: #fff !important;
     position: inherit !important;
     width: auto !important;
     height: auto !important;
-
     height: inherit !important;
     width: -webkit-fill-available !important;
-    /* top: auto; */
-    /* left: 0px; */
 }
 .xmodule_display.xmodule_VideoBlock .video.video-fullscreen .tc-wrapper .video-controls {
     position: fixed !important;
@@ -106,21 +103,15 @@ video {
 
     .audio_block {
         position: absolute;
-        width: 100%;
+        width: 90%;
         height: 400px;
         left: auto;
         right: auto;
-        margin: -50px -10px;
+        margin: -40px 2px;
         background-image: url(https://images.pexels.com/photos/2065490/pexels-photo-2065490.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=11100);
         /* background-repeat: no-repeat;
         background-size: contain;
         background-position: center; */
-    }
-
-    .audio_block > audio {
-        height: 450px;
-        margin: 0 30px;
-        width: -webkit-fill-available;
     }
 }
 
@@ -135,11 +126,6 @@ video {
         width: 100%;
         left: 1px; 
       }
-     .audio_block > audio{
-       width: 1050px;
-       height: 800px;
-       margin: 0 -2px;  
-     }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -152,35 +138,16 @@ video {
     }
     .audio_block{
       position: absolute;
-      width: 740px;
+      width:90%;
       height: 554px;
-      right: auto;
-      margin: 70px 10px 0px;  
+      margin: 70px 36px 0px;  
     }
-   .audio_block > audio{
-     width: 1050px;
-     height: 800px;
-     margin: 0 -2px;  
-   }
-    .audio_block > audio {
-        width: 1050px;
-        height: 800px;
-        margin: 0 -50px;
-    }
-
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     p {
         color: orange;
     }
-
-    .audio_block {
-        width: 920px;
-        height: 800px;
-        padding: 0 22px;
-    }
-
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -298,9 +265,14 @@ label{
     background-size: contain;
     background-position: center;
 }
-
 /* End of Audio content style */
 
 p:empty {
     display: none;
+}
+
+.audio_block > audio{
+    position: absolute;
+    bottom: -100px;
+    width: -webkit-fill-available;
 }
