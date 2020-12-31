@@ -1,1 +1,1 @@
-# edx.custom-theme
+# edx.gp-theme
