@@ -1,0 +1,95 @@
+@media only screen and (max-width: 600px) {
+  .course-tabs {
+    display: none !important;
+  }
+  .page-header {
+    display: none;
+  }
+  .wrapper-preview-menu {
+    display: none;
+  }
+  .global-header {
+    display: none;
+  }
+  .xmodule_display.xmodule_SequenceModule .sequence-nav {
+    display: none;
+  }
+  .instructor-info-action {
+    display: none;
+  }
+  h2.unit-title {
+    display: none;
+  }
+  .bookmark-button-wrapper {
+    display: none;
+  }
+  .container>div {
+    border: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .course-tabs {
+    display: none !important;
+  }
+  .page-header {
+    display: none;
+  }
+  .wrapper-preview-menu {
+    display: none;
+  }
+  .global-header {
+    display: none;
+  }
+  .xmodule_display.xmodule_SequenceModule .sequence-nav {
+    display: none;
+  }
+  .instructor-info-action {
+    display: none;
+  }
+  h2.unit-title {
+    display: none;
+  }
+  .bookmark-button-wrapper {
+    display: none;
+  }
+  .container>div {
+    border: none;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .course-tabs {
+    display: none !important;
+  }
+  .page-header {
+    display: none;
+  }
+  .wrapper-preview-menu {
+    display: none;
+  }
+  .global-header {
+    display: none;
+  }
+  .xmodule_display.xmodule_SequenceModule .sequence-nav {
+    display: none;
+  }
+  .instructor-info-action {
+    display: none;
+  }
+  h2.unit-title {
+    display: none;
+  }
+  .bookmark-button-wrapper {
+    display: none;
+  }
+  .container>div {
+    border: none;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  .wrapper-footer{
+   display: none !important
+  }
+}

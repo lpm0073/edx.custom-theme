@@ -1,27 +1,38 @@
-html,
-body, .content-wrapper, .xmodule_display.xmodule_VideoBlock, .video{
-    font-family: 'Circular Std' !important;
+html, body, .content-wrapper, .xmodule_display.xmodule_VideoBlock, .video {
+    font-family: 'Roboto' !important;
     overflow-x: hidden !important;
     margin: 0 !important;
     border: 0;
 }
 
-html,
-body, .content-wrapper, .course-wrapper main, .xmodule_display.xmodule_VideoBlock, .video{
- height: 100% !important;
+html, body, .content-wrapper, .course-wrapper main, .xmodule_display.xmodule_VideoBlock, .video {
+    height: 100% !important;
 }
 
-.content-wrapper, .course-wrapper main{
-  background: #e5e5e5 !important;
-  padding: 0 !important;
+.content-wrapper, .course-wrapper main {
+    background: #e5e5e5 !important;
+    padding: 0 !important;
+}
+
+p:empty {
+    display: none !important;
+}
+
+blockquote {
+    margin: 1em 9.5px !important;
 }
 
 p {
-    font-size: 14px !important;
+    font-size: 16px !important;
     line-height: 24px !important;
     letter-spacing: -0.5px !important;
     color: black !important;
     padding: 0 12px !important;
+}
+
+p span {
+    background: #e5e5e5 !important;
+    font-size: 16px !important;
 }
 
 p:not(:first-child) {
@@ -29,7 +40,7 @@ p:not(:first-child) {
 }
 
 h2.unit-title {
-    font-family: 'Circular Std' !important;
+    font-family: 'Roboto' !important;
     font-style: normal !important;
     font-size: 26px !important;
     font-weight: bold !important;
@@ -37,23 +48,23 @@ h2.unit-title {
     margin-bottom: 20px !important;
     color: #001F89 !important;
     letter-spacing: -1px;
-    font-feature-settings: "liga" off !important;
+    font-feature-settings: "liga"off !important;
 }
 
-h3.hd-2{
-    font-style: normal !important;
-    font-weight: 500 !important;
-    font-size: 20px !important;
-    line-height: 25px !important;
-    font-feature-settings: 'liga' off !important;
-    color: #fff !important;
+h3.hd-2 {
+    padding: 20px;
+    font-weight: lighter;
+    font-size: 13px;
+    line-height: 17px;
+    color: #FFFFFF;
     background: #001F89 !important;
-    padding: 5px 10px !important;
 }
-.hd-5{
-color: #fff !important;
+
+.hd-5 {
+    color: #fff !important;
 }
-.xmodule_display.xmodule_VideoBlock .video{
+
+.xmodule_display.xmodule_VideoBlock .video {
     background: #001F89 !important;
     display: block;
     padding: 40px 9px !important;
@@ -64,6 +75,7 @@ color: #fff !important;
 }
 
 /* style video when expanded */
+
 .xmodule_display.xmodule_VideoBlock .video.video-fullscreen .tc-wrapper .video-wrapper object, .xmodule_display.xmodule_VideoBlock .video.video-fullscreen .tc-wrapper .video-wrapper iframe, .xmodule_display.xmodule_VideoBlock .video.video-fullscreen .tc-wrapper .video-wrapper video {
     position: inherit !important;
     width: auto !important;
@@ -71,19 +83,22 @@ color: #fff !important;
     height: inherit !important;
     width: -webkit-fill-available !important;
 }
+
 .xmodule_display.xmodule_VideoBlock .video.video-fullscreen .tc-wrapper .video-controls {
     position: fixed !important;
     bottom: 0;
     left: 0;
     width: 100%;
 }
+
 /* end of video style when expanded */
 
 video {
     background: url(.jpg), #189AD1 !important;
     border-radius: 25px !important;
 }
-.xmodule_display.xmodule_VideoBlock .video .video-wrapper{
+
+.xmodule_display.xmodule_VideoBlock .video .video-wrapper {
     margin: 0 !important;
 }
 
@@ -92,74 +107,101 @@ video {
 }
 
 /* Extra small devices (phones, 600px and down) */
+
 @media only screen and (max-width: 600px) {
-    p {
-      color: crimson;
-    }
-    html,
-    body {
+    html, body {
         overflow-x: none !important;
     }
-
     .audio_block {
         position: absolute;
         width: 90%;
         height: 400px;
         left: auto;
         right: auto;
-        margin: -40px 2px;
+        margin: 23px;
         background-image: url(https://images.pexels.com/photos/2065490/pexels-photo-2065490.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=11100);
-        /* background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center; */
+    }
+    h3.hd-2 {
+        padding: 20px;
+        font-weight: lighter;
+        font-size: 13px;
+        line-height: 17px;
+        color: #FFFFFF;
+        background: #001F89 !important;
     }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    p {
-        color: green;
-    }
 
-    .audio_block{
+@media only screen and (min-width: 600px) {
+    .audio_block {
         position: absolute;
         width: 100%;
-        left: 1px; 
-      }
+        left: 1px;
+    }
+    h3.hd-2 {
+        padding: 20px;
+        font-weight: lighter;
+        font-size: 13px;
+        line-height: 17px;
+        color: #FFFFFF;
+        background: #001F89 !important;
+    }
 }
+
 /* Medium devices (landscape tablets, 768px and up) */
+
 @media only screen and (min-width: 768px) {
-    p {
-        color: darkslategray;
-    }
     .xmodule_display.xmodule_VideoBlock .video .video-wrapper .video-player {
-        position  : relative;
-        overflow  : hidden !important;
+        position: relative;
+        overflow: hidden !important;
     }
-    .audio_block{
-      position: absolute;
-      width:90%;
-      height: 554px;
-      margin: 70px 36px 0px;  
+    .audio_block {
+        position: absolute;
+        width: 90%;
+        height: 554px;
+        margin: 70px 36px 0px;
+    }
+    h3.hd-2 {
+        padding: 20px;
+        font-weight: lighter;
+        font-size: 13px;
+        line-height: 17px;
+        color: #FFFFFF;
+        background: #001F89 !important;
     }
 }
+
 /* Large devices (laptops/desktops, 992px and up) */
+
 @media only screen and (min-width: 992px) {
-    p {
-        color: orange;
+    h3.hd-2 {
+        padding: 20px;
+        font-weight: lighter;
+        font-size: 13px;
+        line-height: 17px;
+        color: #FFFFFF;
+        background: #001F89 !important;
     }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    p {
-        color: pink;
-    }
 
+@media only screen and (min-width: 1200px) {
+    h3.hd-2 {
+        padding: 20px;
+        font-weight: lighter;
+        font-size: 13px;
+        line-height: 17px;
+        color: #FFFFFF;
+        background: #001F89 !important;
+    }
 }
+
 .xmodule_display.xmodule_HtmlBlock * {
     line-height: 1;
 }
+
 .course-wrapper .course-content .vert-mod .vert, .course-wrapper .courseware-results-wrapper .vert-mod .vert {
     border-bottom: white !important;
     margin-bottom: 15px;
@@ -167,19 +209,19 @@ video {
 }
 
 /* Test your knowledge style*/
+
 .course-wrapper .course-content .xblock.xblock-student_view-vertical, .course-wrapper .course-content .xblock.xblock-public_view-vertical, .course-wrapper .courseware-results-wrapper .xblock.xblock-student_view-vertical, .course-wrapper .courseware-results-wrapper .xblock.xblock-public_view-vertical {
-    padding: 14px !important;
+    padding: 16px 0 !important;
 }
 
 .xmodule_display.xmodule_HtmlBlock h2, h4:last-of-type {
-    font-family: 'Circular Std' !important;
+    font-family: 'Roboto' !important;
     font-style: normal !important;
     font-weight: normal !important;
     font-size: 13px !important;
     line-height: 17px !important;
-    font-feature-settings: "liga" off !important;
+    font-feature-settings: "liga"off !important;
     color: #000000 !important;
-    /* border-left: 1px solid #c4c4c4 !important; */
     margin: 0 !important;
     padding: 8px !important;
 }
@@ -194,31 +236,29 @@ video {
     background-color: #ffffff !important;
 }
 
-label{
-    font-family: 'Circular Std' !important;
+label {
+    font-family: 'Roboto' !important;
     font-style: normal !important;
     font-weight: normal;
     font-size: 18px !important;
     line-height: 23px !important;
-    font-feature-settings: 'liga' off !important;      
+    font-feature-settings: 'liga'off !important;
     color: #000000 !important;
 }
 
-.xmodule_display.xmodule_ConditionalModule div.problem .xmodule_display.xmodule_ProblemBlock .choicegroup input:focus+label, .xmodule_display.xmodule_ConditionalModule div.problem .xmodule_display.xmodule_ProblemBlock .choicetextgroup input:focus+label, .xmodule_display.xmodule_ProblemBlock div.problem .choicegroup input:focus+label, .xmodule_display.xmodule_ProblemBlock div.problem .choicetextgroup input:focus+label, .xmodule_display.xmodule_ConditionalModule div.problem .xmodule_display.xmodule_ProblemBlock .choicegroup input:hover+label, .xmodule_display.xmodule_ConditionalModule div.problem .xmodule_display.xmodule_ProblemBlock .choicetextgroup input:hover+label, .xmodule_display.xmodule_ProblemBlock div.problem .choicegroup input:hover+label, .xmodule_display.xmodule_ProblemBlock div.problem .choicetextgroup input:hover+label::selection{
- background-color: #3684f1 !important;
- color: #fff !important;
- cursor: pointer !important;
+.xmodule_display.xmodule_ConditionalModule div.problem .xmodule_display.xmodule_ProblemBlock .choicegroup input:focus+label, .xmodule_display.xmodule_ConditionalModule div.problem .xmodule_display.xmodule_ProblemBlock .choicetextgroup input:focus+label, .xmodule_display.xmodule_ProblemBlock div.problem .choicegroup input:focus+label, .xmodule_display.xmodule_ProblemBlock div.problem .choicetextgroup input:focus+label, .xmodule_display.xmodule_ConditionalModule div.problem .xmodule_display.xmodule_ProblemBlock .choicegroup input:hover+label, .xmodule_display.xmodule_ConditionalModule div.problem .xmodule_display.xmodule_ProblemBlock .choicetextgroup input:hover+label, .xmodule_display.xmodule_ProblemBlock div.problem .choicegroup input:hover+label, .xmodule_display.xmodule_ProblemBlock div.problem .choicetextgroup input:hover+label::selection {
+    background-color: #3684f1 !important;
+    color: #fff !important;
+    cursor: pointer !important;
 }
 
-.xblock-student_view-html > p{
-    margin: 0 0 0 10px !important;
-    font-family: 'Circular Std';
-   }
-
-.xblock-student_view-html > p {
-    /* border-left: 1px solid #c4c4c4 !important; */
+.xblock-student_view-html>p {
     margin: inherit !important;
-    /* font-family: 'Circular Std'; */
+}
+
+.xblock-student_view-html>p {
+    margin: 0 0 0 10px !important;
+    font-family: 'Roboto';
 }
 
 .hd-3 {
@@ -227,7 +267,7 @@ label{
     font-size: 18px !important;
     font-weight: normal !important;
     font-style: normal !important;
-    font-family: 'Circular Std' !important;
+    font-family: 'Roboto' !important;
 }
 
 .xmodule_display.xmodule_ProblemBlock div.problem-progress, p {
@@ -237,8 +277,57 @@ label{
     border-left: 1px solid #c4c4c4 !important;
     padding: 10px !important;
 }
-.xmodule_display.xmodule_ProblemBlock div.problem-progress, p {
-   border-left: none !important;
+
+p:empty, p:blank {
+    display: none !important;
+    background: lightblue !important;
+}
+
+li p {
+    border-left: none !important;
+    padding: 0 !important;
+    margin-bottom: 0.5rem !important;
+    display: inline-block;
+    width: 90%
+}
+
+.xblock-student_view-html ul {
+    list-style: none !important;
+    padding: 0 !important;
+    border-left: 1px solid #c4c4c4 !important;
+    margin: 0 0 0 10px !important;
+}
+
+.xblock-student_view-html ul li {
+    list-style-type: none !important;
+    margin: 0 0 0 1rem !important;
+    display: flex;
+}
+
+.xblock-student_view-html ul li::before {
+    content: ' ';
+    background-color: black;
+    display: inline-block;
+    width: 0.4rem;
+    border-radius: 50%;
+    height: 0.4rem;
+    text-align: center;
+    margin-right: 0.5rem;
+    position: relative;
+    top: 0.5rem;
+}
+
+.xblock-student_view-html h3 {
+    font-size: 20px;
+    padding: 1rem;
+    font-weight: bold;
+    background-color: #001F89;
+    margin: 1rem 0 1rem 0 !important;
+}
+
+.xblock-student_view-html h3 span{
+    color: white !important;
+    font-size: 20px !important;
 }
 
 .xmodule_display.xmodule_ProblemBlock div.problem .choicegroup input[type="radio"], .xmodule_display.xmodule_ProblemBlock div.problem .choicegroup input[type="checkbox"] {
@@ -253,12 +342,14 @@ label{
 /* End of test your knowledge style */
 
 /* Syle Audio content */
-#content.content-wrapper.main-container{
-    background: radial-gradient( circle at top right, #16222A, #3A6073 ) !important;
+#content.content-wrapper.main-container {
+    background: radial-gradient(circle at top right, #16222A, #3A6073) !important;
 }
-.courseware-results-wrapper{
-    background: radial-gradient( circle at top right, #16222A, #3A6073 ) !important;
+
+.courseware-results-wrapper {
+    background: radial-gradient(circle at top right, #16222A, #3A6073) !important;
 }
+
 .audio_block {
     background-image: url(https://images.pexels.com/photos/2065490/pexels-photo-2065490.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=11100);
     background-repeat: no-repeat;
@@ -266,13 +357,25 @@ label{
     background-position: center;
 }
 /* End of Audio content style */
-
-p:empty {
-    display: none;
-}
-
-.audio_block > audio{
+.audio_block>audio {
     position: absolute;
     bottom: -100px;
     width: -webkit-fill-available;
+}
+
+.course-tabs {
+    background: orange !important;
+}
+
+.bookmark-button-wrapper .instructor-info-action .sequence-nav .page-header .course-tabs .wrapper-preview-menu {
+    display: none !important;
+}
+
+.global-header {
+    border-bottom: none !important;
+}
+
+.course-wrapper .course-content ul li, .course-wrapper .courseware-results-wrapper ul li {
+    margin-bottom: 0.70788em;
+    font-size: 16px !important;
 }

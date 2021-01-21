@@ -76,8 +76,9 @@ ${HTML(fragment.foot_html())}
 </%block>
 
 <head>
-<link href="${static.url('https://fonts.cdnfonts.com/css/circular-std')}" rel="stylesheet">
-<link rel="stylesheet" href="${static.url('css/courseware-chromeless.css')}">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="${static.url('css/courseware-chromeless.css')}">
 </head>
 <div class="course-wrapper chromeless">
   <section class="course-content" id="course-content"\
@@ -170,3 +171,25 @@ ${HTML(fragment.foot_html())}
   }());
 </script>
 % endif
+
+
+
+<!-- <style>
+    .instructor-info-action {
+    display: none;
+  }
+</style> -->
+
+
+<style>
+  .course-wrapper .course-content ul li, .course-wrapper .courseware-results-wrapper ul li {
+    margin-bottom: 0.70788em;
+    font-size: 14px !important;
+    letter-spacing: -0.5px !important; 
+    color: black !important;
+}
+
+img, h3{
+  text-align: center !important;
+}
+</style>
