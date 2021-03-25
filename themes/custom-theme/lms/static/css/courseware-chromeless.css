@@ -1,0 +1,586 @@
+html, body, .content-wrapper, .xmodule_display.xmodule_VideoBlock, .video {
+    font-family: 'Open Sans' !important;
+    overflow-x: hidden !important;
+    margin: 0 !important;
+    border: 0;
+}
+
+html, body, .content-wrapper, .course-wrapper main, .xmodule_display.xmodule_VideoBlock, .video {
+    height: 100% !important;
+}
+
+.content-wrapper, .course-wrapper main {
+    background: #F7F7F7 !important;
+    padding: 0 !important;
+}
+
+p:empty {
+    display: none !important;
+}
+
+blockquote {
+    margin: 1em 9.5px !important;
+}
+
+p {
+    font-size: 17px !important;
+    line-height: 24px !important;
+    letter-spacing: -0.5px !important;
+    color: black !important;
+    padding: 0 12px !important;
+}
+
+p span {
+    background: #F7F7F7 !important;
+    font-size: 17px !important;
+}
+
+p:not(:first-child) {
+    padding-top: 10px !important;
+}
+
+h2.unit-title {
+    font-family: 'Open Sans' !important;
+    font-style: normal !important;
+    font-size: 28px !important;
+    font-weight: bold !important;
+    font-feature-settings: "liga" !important;
+    margin-bottom: 20px !important;
+    color: #0025A5 !important;
+    letter-spacing: -1px;
+    font-feature-settings: "liga"off !important;
+    padding-left: 10px;
+}
+
+h3.hd-2 {
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+    background: #0025A5 !important;
+}
+
+.hd-5 {
+    color: #fff !important;
+}
+
+.xmodule_display.xmodule_VideoBlock .video {
+    background: #0025A5 !important;
+    display: block;
+    padding: 40px 9px !important;
+    outline: none;
+    border-radius: 0 !important;
+    width: inherit !important;
+    height: 100% !important;
+}
+
+/* style video when expanded */
+
+.xmodule_display.xmodule_VideoBlock .video.video-fullscreen .tc-wrapper .video-wrapper object, .xmodule_display.xmodule_VideoBlock .video.video-fullscreen .tc-wrapper .video-wrapper iframe, .xmodule_display.xmodule_VideoBlock .video.video-fullscreen .tc-wrapper .video-wrapper video {
+    position: inherit !important;
+    width: auto !important;
+    height: auto !important;
+    height: inherit !important;
+    width: -webkit-fill-available !important;
+}
+
+.xmodule_display.xmodule_VideoBlock .video.video-fullscreen .tc-wrapper .video-controls {
+    position: fixed !important;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.xblock.xblock-student_view.xblock-student_view-video.xmodule_display.xmodule_VideoBlock.xblock-initialized h3 {
+    margin-bottom: 0px !important;
+}
+
+/* end of video style when expanded */
+
+video {
+    background: #189AD1 !important;
+    border-radius: 25px !important;
+}
+
+.xmodule_display.xmodule_VideoBlock .video .video-wrapper {
+    margin: 0 !important;
+}
+
+.xmodule_display.xmodule_VideoBlock .video .video-wrapper .video-player {
+    overflow: hidden !important;
+}
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    html, body {
+        overflow-x: none !important;
+    }
+    h3.hd-2 {
+        padding: 20px;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 22px;
+        color: #FFFFFF;
+        background: #0025A5 !important;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    h3.hd-2 {
+        padding: 20px;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 17px;
+        color: #FFFFFF;
+        background: #0025A5 !important;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    .xmodule_display.xmodule_VideoBlock .video .video-wrapper .video-player {
+        position: relative;
+        overflow: hidden !important;
+    }
+    h3.hd-2 {
+        padding: 20px;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 17px;
+        color: #FFFFFF;
+        background: #0025A5 !important;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    h3.hd-2 {
+        padding: 20px;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 17px;
+        color: #FFFFFF;
+        background: #0025A5 !important;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    h3.hd-2 {
+        padding: 20px;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 17px;
+        color: #FFFFFF;
+        background: #0025A5 !important;
+    }
+}
+
+.xmodule_display.xmodule_HtmlBlock * {
+    line-height: 1;
+}
+
+.course-wrapper .course-content .vert-mod .vert, .course-wrapper .courseware-results-wrapper .vert-mod .vert {
+    border-bottom: white !important;
+    margin-bottom: 15px;
+    padding: 0 0 15px;
+}
+
+/* Test your knowledge style*/
+
+.course-wrapper .course-content .xblock.xblock-student_view-vertical, .course-wrapper .course-content .xblock.xblock-public_view-vertical, .course-wrapper .courseware-results-wrapper .xblock.xblock-student_view-vertical, .course-wrapper .courseware-results-wrapper .xblock.xblock-public_view-vertical {
+    padding: 16px 0 !important;
+}
+
+.xmodule_display.xmodule_ProblemBlock div.problem .choicegroup label, .xmodule_display.xmodule_ProblemBlock div.problem .choicetextgroup label, .xmodule_display.xmodule_ConditionalModule div.problem .xmodule_display.xmodule_ProblemBlock .choicegroup label, .xmodule_display.xmodule_ConditionalModule div.problem .xmodule_display.xmodule_ProblemBlock .choicetextgroup label {
+    box-sizing: border-box;
+    display: inline-block;
+    clear: both;
+    margin: 10px;
+    width: auto !important;
+    border-radius: 8px !important;
+    padding: none !important;
+    background-color: #ffffff !important;
+}
+
+label {
+    font-family: 'Open Sans' !important;
+    font-style: normal !important;
+    font-weight: normal;
+    font-size: 18px !important;
+    line-height: 23px !important;
+    font-feature-settings: 'liga'off !important;
+    color: #000000 !important;
+}
+
+.xmodule_display.xmodule_ConditionalModule div.problem .xmodule_display.xmodule_ProblemBlock .choicegroup input:focus+label, .xmodule_display.xmodule_ConditionalModule div.problem .xmodule_display.xmodule_ProblemBlock .choicetextgroup input:focus+label, .xmodule_display.xmodule_ProblemBlock div.problem .choicegroup input:focus+label, .xmodule_display.xmodule_ProblemBlock div.problem .choicetextgroup input:focus+label, .xmodule_display.xmodule_ConditionalModule div.problem .xmodule_display.xmodule_ProblemBlock .choicegroup input:hover+label, .xmodule_display.xmodule_ConditionalModule div.problem .xmodule_display.xmodule_ProblemBlock .choicetextgroup input:hover+label, .xmodule_display.xmodule_ProblemBlock div.problem .choicegroup input:hover+label, .xmodule_display.xmodule_ProblemBlock div.problem .choicetextgroup input:hover+label::selection {
+    background-color: #3684f1 !important;
+    color: #fff !important;
+    cursor: pointer !important;
+}
+
+.xblock-student_view-html>p {
+    margin: 0 0 0 10px !important;
+    font-family: 'Open Sans';
+}
+
+.hd-3 {
+    font-size: 23px;
+    padding: 1rem;
+    font-weight: bold;
+    background-color: #0025A5;
+    margin: 1rem 0 1rem 0 !important;
+    color: white !important;
+    font-size: 23px !important;
+}
+
+.xmodule_display.xmodule_ProblemBlock div.problem-progress, p {
+    display: inline-block;
+    color: #5e5e5e;
+    font-size: 0.875em;
+    border-left: 1px solid #DDDDDD !important;
+    padding: 10px !important;
+}
+
+p:empty, p:blank {
+    display: none !important;
+    background: lightblue !important;
+}
+
+li p {
+    border-left: none !important;
+    padding: 0 !important;
+    margin-bottom: 0.5rem !important;
+    display: inline-block;
+    width: 90%;
+    font-size: 17px;
+}
+
+li span {
+    border-left: none !important;
+    padding: 0 !important;
+    margin-bottom: 0.5rem !important;
+    display: inline-block;
+    width: 90%;
+    font-size: 17px;
+}
+
+.xblock-student_view-html ul {
+    list-style: none !important;
+    padding: 0 !important;
+    border-left: 1px solid #DDDDDD !important;
+    margin: 0 0 0 10px !important;
+}
+
+.xblock-student_view-html ul li {
+    list-style-type: none !important;
+    margin: 0 1rem 0.3rem 1.6rem !important;
+    display: inline-block;
+    line-height: 23px !important;
+    font-size: 17px !important;
+    position: relative;
+}
+
+.xblock-student_view-html ul li::before {
+    content: ' ';
+    background-color: black;
+    display: inline-block;
+    width: 0.4rem;
+    border-radius: 50%;
+    height: 0.4rem;
+    text-align: center;
+    margin-right: 0.5rem;
+    position: absolute;
+    left: -16px;
+    top: 0.5rem;
+}
+
+pre img {
+    margin: auto;
+    display: block;
+}
+
+.xblock-student_view h3 {
+    font-size: 23px;
+    padding: 1rem;
+    font-weight: bold;
+    background-color: #0025A5;
+    margin: 1rem 0 1rem 0 !important;
+    color: white !important;
+}
+
+.xblock-student_view h3 span {
+    color: white !important;
+    font-size: 23px !important;
+}
+
+.xblock-student_view h4 {
+    font-size: 20px;
+    padding: 1rem;
+    font-weight: bold;
+    text-align: left;
+    margin: 1rem 0 1rem 0 !important;
+}
+
+.xblock-student_view h4 span {
+    font-size: 20px !important;
+    text-decoration: underline;
+    font-family: 'Open Sans' !important;
+}
+
+.xmodule_display.xmodule_ProblemBlock .problem .choicegroup input[type="radio"],
+.xmodule_display.xmodule_ProblemBlock .problem .choicegroup input[type="checkbox"] {
+    margin-top: 0 !important;
+    left: 1em !important;
+    top: 50% !important;
+    transform: translateY(-50%);
+}
+
+.xmodule_display.xmodule_ProblemBlock div.problem .choicegroup input:checked+label {
+    color: white !important;
+    background-color: #3684f1 !important;
+}
+
+.xmodule_display.xmodule_ProblemBlock div.problem .choicegroup input:hover+label {
+    background-color: white !important;
+    color: black !important;
+}
+
+.vert .xblock-student_view-discussion {
+    display: none;
+}
+
+.instructor-info-action {
+    display: none;
+}
+
+/* End of test your knowledge style */
+
+#content.content-wrapper.main-container {
+    background: radial-gradient(circle at top right, #16222A, #3A6073) !important;
+}
+
+.courseware-results-wrapper {
+    background: radial-gradient(circle at top right, #16222A, #3A6073) !important;
+}
+
+.course-tabs {
+    background: orange !important;
+}
+
+.bookmark-button-wrapper .instructor-info-action .sequence-nav .page-header .course-tabs .wrapper-preview-menu {
+    display: none !important;
+}
+
+.global-header {
+    border-bottom: none !important;
+}
+
+.course-wrapper .course-content ul li, .course-wrapper .courseware-results-wrapper ul li {
+    color: black;
+    font-size: 17px;
+    letter-spacing: -0.5px;
+    margin-bottom: 0.70788em;
+}
+
+
+/* Generic iframe */
+
+.xblock.xblock-student_view.xblock-student_view-html.xmodule_display.xmodule_HtmlBlock.xblock-initialized>iframe,
+.xblock.xblock-student_view.xblock-student_view-html.xmodule_display.xmodule_HtmlBlock.xblock-initialized>pre iframe {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+}
+
+/* h5p, Genially, Riddle, LTI content iframe */
+
+.xblock.xblock-student_view.xblock-student_view-html.xmodule_display.xmodule_HtmlBlock.xblock-initialized iframe[src*="//traceacademia.h5p.com/"],
+.xblock.xblock-student_view.xblock-student_view-html.xmodule_display.xmodule_HtmlBlock.xblock-initialized iframe[src*="//view.genial.ly/"],
+.xblock.xblock-student_view.xblock-student_view-html.xmodule_display.xmodule_HtmlBlock.xblock-initialized iframe[src*="//www.riddle.com/"] {
+    border: 1px solid #f7f7f7;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    display: block !important;
+    margin: 0 auto !important;
+    width: 90vw !important;
+}
+
+.xblock.xblock-student_view.xblock-student_view-html.xmodule_display.xmodule_HtmlBlock.xblock-initialized iframe[src*="//player.vimeo.com/"]:not([title="Video Embed"]) {
+    background: #000;
+    border-radius: 6px;
+    display: block !important;
+    height: 90vw !important;
+    margin: 0 auto !important;
+    width: 90vw !important;
+}
+
+
+/* <genially-xblock> */
+.genially_iframe_container {
+    border: 1px solid #f7f7f7;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    margin: 0 auto;
+    max-width: 90vw;
+}
+/* </genially-xblock> */
+
+
+/* <vimeo-xblock> */
+.xblock.xblock-student_view.xblock-student_view-vimeo .vimeo_block {
+    background: #0025A5;
+    color: #fff;
+    padding: 20px 0 32px 0;
+    position: relative;
+}
+.xblock.xblock-student_view.xblock-student_view-vimeo .vimeo_block::after {
+    background: #f0f0f0;
+    bottom: 0;
+    content: "";
+    height: 72px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+.xblock.xblock-student_view.xblock-student_view-vimeo .vimeo_block h4 {
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+}
+.xblock.xblock-student_view.xblock-student_view-vimeo .vimeo_block h4,
+.xblock.xblock-student_view.xblock-student_view-vimeo .vimeo_block p {
+    border: 0 !important;
+    color: #fff !important;
+    display: block;
+    margin: 0 auto !important;
+    padding: 0 0 10px 0 !important;
+    width: 90vw;
+}
+.xblock.xblock-student_view.xblock-student_view-vimeo .vimeo_block h4:empty,
+.xblock.xblock-student_view.xblock-student_view-vimeo .vimeo_block p:empty {
+    padding-bottom: 0 !important;
+}
+.xblock.xblock-student_view.xblock-student_view-vimeo .vimeo_block iframe {
+    background: #000;
+    border-radius: 6px;
+    display: block;
+    height: 90vw;
+    margin: 10px auto 0;
+    position: relative;
+    width: 90vw;
+    z-index: 2;
+}
+/* </vimeo-xblock> */
+
+
+/* <audio-xblock> */
+.xblock.xblock-student_view.xblock-student_view-audio .audio_block {
+    background: #0025A5;
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+}
+.xblock.xblock-student_view.xblock-student_view-audio .audio_block h4,
+.xblock.xblock-student_view.xblock-student_view-audio .audio_block p {
+    border: 0 !important;
+    color: #fff !important;
+    display: block;
+    margin: 0 auto !important;
+    width: 90vw;
+}
+.xblock.xblock-student_view.xblock-student_view-audio .audio_block h4 {
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+}
+.xblock.xblock-student_view.xblock-student_view-audio .audio_block h4,
+.xblock.xblock-student_view.xblock-student_view-audio .audio_block p,
+.xblock.xblock-student_view.xblock-student_view-audio .audio_block audio {
+    margin: 0 auto !important;
+    padding: 0 0 10px 0 !important;
+}
+.xblock.xblock-student_view.xblock-student_view-audio .audio_block h4:empty,
+.xblock.xblock-student_view.xblock-student_view-audio .audio_block p:empty {
+    padding: 0 !important;
+}
+.xblock.xblock-student_view.xblock-student_view-audio .audio_block audio {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 0 !important;
+    position: relative;
+    width: 90vw;
+}
+/* </audio-xblock> */
+
+
+
+/* <problem-block> */
+.xblock.xblock-student_view.xblock-student_view-problem .problems-wrapper {
+    padding: 10px;
+}
+.xblock.xblock-student_view.xblock-student_view-problem .problems-wrapper .problem-header {
+    display: none;
+}
+.xblock.xblock-student_view.xblock-student_view-problem .problems-wrapper .problem-header {
+    display: none;
+}
+.xblock.xblock-student_view.xblock-student_view-problem .problems-wrapper .action {
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.xblock.xblock-student_view.xblock-student_view-problem .problems-wrapper .problem-progress {
+    display: none;
+}
+/* </problem-block> */
+
+
+
+/* <lti-block> */
+.xblock.xblock-student_view.xblock-student_view-lti .problem-header {
+    display: none;
+}
+.xblock.xblock-student_view.xblock-student_view-lti .lti {
+    background: #fff;
+    border: 1px solid #f7f7f7;
+    box-sizing: border-box;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    display: block;
+    margin: 0 10px;
+    padding: 20px;
+}
+.xblock.xblock-student_view.xblock-student_view-lti .lti iframe {
+    display: block !important;
+    margin: 0 auto !important;
+    width: 100%;
+}
+/* </lti-block> */
+
+
+
+/* Swiper styling */
+
+.swiper-pagination-bullet:only-child {
+    display: none;
+}
+.swiper-pagination-bullet {
+    background: #aaa;
+    opacity: 1;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #007aff;
+    opacity: 1;
+}

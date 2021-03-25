@@ -1,0 +1,72 @@
+<%page expression_filter="h"/>
+<%! from django.utils.translation import ugettext as _ %>
+<%namespace name='static' file='../static_content.html'/>
+<%
+course_mode_class = course_mode if course_mode else ''
+%>
+
+<link href="${static.url('https://fonts.googleapis.com/css2?family=Meie+Script&display=swap')}" rel="stylesheet">
+<link href="${static.url('https://fonts.cdnfonts.com/css/circular-std')}" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<link rel="stylesheet" href="${static.url('css/certificates/trace-certs.css')}">
+
+<main class='trace-cert'>
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <div class="container left-top-box">
+                    <div class="row organization-logos">
+                        <div class="col">
+                            <img class="organization-logo" src="${logo_src}" alt="${platform_name}">
+                        </div>
+                    </div>
+                    <div class="row presenter-text">
+                        <h1>This certificate is presented to:</h1>
+                    </div>
+                    <div class="row">
+                        <div class='user-full-name'>${accomplishment_copy_name}</div>
+                    </div>
+                    <div class="row">
+                        <p>For successfully completing</p>
+                    </div>
+                    <div class="row">
+                        <p class='course-name'>${accomplishment_copy_course_name}</p>
+                    </div>
+                    <div>
+                        <p>An online course provided through Trace Academia.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="container">
+                    <div class="row right-box">
+                        <img class='cert-logo' src="${static.url('images/trace-cert-logo.png')}" alt="Certification Logo">
+                    </div>
+                    <div class="row">
+                        <div class="gg-shape-triangle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row pt-3">
+            <div class="col-sm">
+                <div class="container left-bottom-box">
+                    <div class="row">
+                        % for signatory in certificate_data.get('signatories', []):
+                            % if signatory.get('signature_image_path'):
+                                <div class="signatory col-4">
+                                    <img class="signatory-signature" src="${static.url(signatory['signature_image_path'])}" alt="${signatory['name']}">
+                                    <span class="signatory-name hd-5">${signatory['name']}</span>
+                                </div>
+                            % endif
+                        % endfor
+                        <div class="col-4">
+                            <div class="signatory-date">${certificate_date_issued}</div>
+                            <div class="signatory-name">DATE</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
