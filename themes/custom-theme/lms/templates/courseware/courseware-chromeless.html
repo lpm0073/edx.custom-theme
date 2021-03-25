@@ -182,14 +182,73 @@ ${HTML(fragment.foot_html())}
 
 
 <style>
-  .course-wrapper .course-content ul li, .course-wrapper .courseware-results-wrapper ul li {
-    margin-bottom: 0.70788em;
-    font-size: 14px !important;
-    letter-spacing: -0.5px !important; 
-    color: black !important;
-}
-
 img, h3{
   text-align: center !important;
 }
 </style>
+
+<script type="text/javascript" src="https://traceacademia.h5p.com/js/h5p-resizer.js" charset="UTF-8"></script>
+<script type="text/javascript" charset="UTF-8">
+
+// LTI iframe Resizer
+(function () {
+  if (!window.postMessage || !window.addEventListener) {
+    return;
+  }
+
+  var actionHandlers = {};
+
+  function updateIframeHeight(iframe, height) {
+    iframe.style.height = height + 'px';
+  };
+
+  function getHeightFromLTIData(data) {
+    return data.height - 50;
+  };
+
+  actionHandlers.lti_pageRefresh = function (iframe, data) {
+    updateIframeHeight(iframe, getHeightFromLTIData(data));
+  };
+
+  actionHandlers.lti_frameResize = function (iframe, data) {
+    updateIframeHeight(iframe, getHeightFromLTIData(data));
+  };
+
+  window.addEventListener('message', function receiveMessage(event) {
+    var parsedEventData;
+    try {
+      parsedEventData = JSON.parse(event.data);
+    } catch (e) {
+      parsedEventData = event.data;
+    }
+
+    if (!parsedEventData.subject) {
+      return;
+    }
+
+    if (parsedEventData.subject.indexOf('lti.') !== 0) {
+      return;
+    }
+
+    parsedEventData.action = parsedEventData.subject.replace('lti.', 'lti_');
+
+    var iframe, iframes = document.getElementsByTagName('iframe');
+    for (var i = 0; i < iframes.length; i++) {
+      if (iframes[i].contentWindow === event.source) {
+        iframe = iframes[i];
+        break;
+      }
+    }
+
+    if (!iframe) {
+      return;
+    }
+
+    if (actionHandlers[parsedEventData.action]) {
+      actionHandlers[parsedEventData.action](iframe, parsedEventData);
+    }
+  }, false);
+
+})();
+
+</script>

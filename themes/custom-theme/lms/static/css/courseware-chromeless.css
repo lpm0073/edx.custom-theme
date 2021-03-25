@@ -1,5 +1,5 @@
 html, body, .content-wrapper, .xmodule_display.xmodule_VideoBlock, .video {
-    font-family: 'Roboto' !important;
+    font-family: 'Open Sans' !important;
     overflow-x: hidden !important;
     margin: 0 !important;
     border: 0;
@@ -23,7 +23,7 @@ blockquote {
 }
 
 p {
-    font-size: 16px !important;
+    font-size: 17px !important;
     line-height: 24px !important;
     letter-spacing: -0.5px !important;
     color: black !important;
@@ -32,7 +32,7 @@ p {
 
 p span {
     background: #F7F7F7 !important;
-    font-size: 16px !important;
+    font-size: 17px !important;
 }
 
 p:not(:first-child) {
@@ -40,9 +40,9 @@ p:not(:first-child) {
 }
 
 h2.unit-title {
-    font-family: 'Roboto' !important;
+    font-family: 'Open Sans' !important;
     font-style: normal !important;
-    font-size: 26px !important;
+    font-size: 28px !important;
     font-weight: bold !important;
     font-feature-settings: "liga" !important;
     margin-bottom: 20px !important;
@@ -56,7 +56,7 @@ h3.hd-2 {
     padding: 20px;
     font-weight: bold;
     font-size: 20px;
-    line-height: 17px;
+    line-height: 20px;
     color: #FFFFFF;
     background: #0025A5 !important;
 }
@@ -99,7 +99,7 @@ h3.hd-2 {
 /* end of video style when expanded */
 
 video {
-    background: url(.jpg), #189AD1 !important;
+    background: #189AD1 !important;
     border-radius: 25px !important;
 }
 
@@ -117,20 +117,11 @@ video {
     html, body {
         overflow-x: none !important;
     }
-    .audio_block {
-        position: absolute;
-        width: 90%;
-        height: 400px;
-        left: auto;
-        right: auto;
-        margin: 23px;
-        background-image: url(https://images.pexels.com/photos/2065490/pexels-photo-2065490.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=11100);
-    }
     h3.hd-2 {
         padding: 20px;
         font-weight: bold;
         font-size: 20px;
-        line-height: 17px;
+        line-height: 22px;
         color: #FFFFFF;
         background: #0025A5 !important;
     }
@@ -139,11 +130,6 @@ video {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
 @media only screen and (min-width: 600px) {
-    .audio_block {
-        position: absolute;
-        width: 100%;
-        left: 1px;
-    }
     h3.hd-2 {
         padding: 20px;
         font-weight: bold;
@@ -160,12 +146,6 @@ video {
     .xmodule_display.xmodule_VideoBlock .video .video-wrapper .video-player {
         position: relative;
         overflow: hidden !important;
-    }
-    .audio_block {
-        position: absolute;
-        width: 90%;
-        height: 554px;
-        margin: 70px 36px 0px;
     }
     h3.hd-2 {
         padding: 20px;
@@ -219,19 +199,6 @@ video {
     padding: 16px 0 !important;
 }
 
-.xmodule_display.xmodule_HtmlBlock h2, h4:last-of-type {
-    font-family: 'Roboto' !important;
-    font-style: normal !important;
-    font-weight: normal !important;
-    font-size: 13px !important;
-    line-height: 17px !important;
-    font-feature-settings: "liga"off !important;
-    color: #000000 !important;
-    margin: 0 !important;
-    padding: 8px !important;
-    letter-spacing: 0px;
-}
-
 .xmodule_display.xmodule_ProblemBlock div.problem .choicegroup label, .xmodule_display.xmodule_ProblemBlock div.problem .choicetextgroup label, .xmodule_display.xmodule_ConditionalModule div.problem .xmodule_display.xmodule_ProblemBlock .choicegroup label, .xmodule_display.xmodule_ConditionalModule div.problem .xmodule_display.xmodule_ProblemBlock .choicetextgroup label {
     box-sizing: border-box;
     display: inline-block;
@@ -244,7 +211,7 @@ video {
 }
 
 label {
-    font-family: 'Roboto' !important;
+    font-family: 'Open Sans' !important;
     font-style: normal !important;
     font-weight: normal;
     font-size: 18px !important;
@@ -260,12 +227,8 @@ label {
 }
 
 .xblock-student_view-html>p {
-    margin: inherit !important;
-}
-
-.xblock-student_view-html>p {
     margin: 0 0 0 10px !important;
-    font-family: 'Roboto';
+    font-family: 'Open Sans';
 }
 
 .hd-3 {
@@ -297,7 +260,7 @@ li p {
     margin-bottom: 0.5rem !important;
     display: inline-block;
     width: 90%;
-    font-size: 16px;
+    font-size: 17px;
 }
 
 li span {
@@ -306,7 +269,7 @@ li span {
     margin-bottom: 0.5rem !important;
     display: inline-block;
     width: 90%;
-    font-size: 16px;
+    font-size: 17px;
 }
 
 .xblock-student_view-html ul {
@@ -318,14 +281,11 @@ li span {
 
 .xblock-student_view-html ul li {
     list-style-type: none !important;
-    margin: 0 1rem 0 1rem !important;
+    margin: 0 1rem 0.3rem 1.6rem !important;
     display: inline-block;
-    line-height: 20px !important;
-}
-
-pre img {
-    margin: auto;
-    display: block;
+    line-height: 23px !important;
+    font-size: 17px !important;
+    position: relative;
 }
 
 .xblock-student_view-html ul li::before {
@@ -337,24 +297,31 @@ pre img {
     height: 0.4rem;
     text-align: center;
     margin-right: 0.5rem;
-    position: relative;
+    position: absolute;
+    left: -16px;
     top: 0.5rem;
 }
 
-.xblock-student_view-html h3 {
+pre img {
+    margin: auto;
+    display: block;
+}
+
+.xblock-student_view h3 {
     font-size: 23px;
     padding: 1rem;
     font-weight: bold;
     background-color: #0025A5;
     margin: 1rem 0 1rem 0 !important;
+    color: white !important;
 }
 
-.xblock-student_view-html h3 span{
+.xblock-student_view h3 span {
     color: white !important;
     font-size: 23px !important;
 }
 
-.xblock-student_view-html h4 {
+.xblock-student_view h4 {
     font-size: 20px;
     padding: 1rem;
     font-weight: bold;
@@ -362,20 +329,18 @@ pre img {
     margin: 1rem 0 1rem 0 !important;
 }
 
-.xblock-student_view-html h4 span{
+.xblock-student_view h4 span {
     font-size: 20px !important;
     text-decoration: underline;
-    font-family: 'Roboto' !important;
+    font-family: 'Open Sans' !important;
 }
 
-.xmodule_display.xmodule_ProblemBlock div.problem .choicegroup input[type="radio"], .xmodule_display.xmodule_ProblemBlock div.problem .choicegroup input[type="checkbox"] {
-    left: 0.5625em;
-    position: absolute;
-    top: 0.5625em;
-    width: 22px;
-    height: 22px;
-    z-index: 1;
-    display: none !important;
+.xmodule_display.xmodule_ProblemBlock .problem .choicegroup input[type="radio"],
+.xmodule_display.xmodule_ProblemBlock .problem .choicegroup input[type="checkbox"] {
+    margin-top: 0 !important;
+    left: 1em !important;
+    top: 50% !important;
+    transform: translateY(-50%);
 }
 
 .xmodule_display.xmodule_ProblemBlock div.problem .choicegroup input:checked+label {
@@ -387,28 +352,23 @@ pre img {
     background-color: white !important;
     color: black !important;
 }
+
+.vert .xblock-student_view-discussion {
+    display: none;
+}
+
+.instructor-info-action {
+    display: none;
+}
+
 /* End of test your knowledge style */
 
-/* Syle Audio content */
 #content.content-wrapper.main-container {
     background: radial-gradient(circle at top right, #16222A, #3A6073) !important;
 }
 
 .courseware-results-wrapper {
     background: radial-gradient(circle at top right, #16222A, #3A6073) !important;
-}
-
-.audio_block {
-    background-image: url(https://images.pexels.com/photos/2065490/pexels-photo-2065490.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=11100);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}
-/* End of Audio content style */
-.audio_block>audio {
-    position: absolute;
-    bottom: -100px;
-    width: -webkit-fill-available;
 }
 
 .course-tabs {
@@ -424,6 +384,203 @@ pre img {
 }
 
 .course-wrapper .course-content ul li, .course-wrapper .courseware-results-wrapper ul li {
+    color: black;
+    font-size: 17px;
+    letter-spacing: -0.5px;
     margin-bottom: 0.70788em;
-    font-size: 16px !important;
+}
+
+
+/* Generic iframe */
+
+.xblock.xblock-student_view.xblock-student_view-html.xmodule_display.xmodule_HtmlBlock.xblock-initialized>iframe,
+.xblock.xblock-student_view.xblock-student_view-html.xmodule_display.xmodule_HtmlBlock.xblock-initialized>pre iframe {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+}
+
+/* h5p, Genially, Riddle, LTI content iframe */
+
+.xblock.xblock-student_view.xblock-student_view-html.xmodule_display.xmodule_HtmlBlock.xblock-initialized iframe[src*="//traceacademia.h5p.com/"],
+.xblock.xblock-student_view.xblock-student_view-html.xmodule_display.xmodule_HtmlBlock.xblock-initialized iframe[src*="//view.genial.ly/"],
+.xblock.xblock-student_view.xblock-student_view-html.xmodule_display.xmodule_HtmlBlock.xblock-initialized iframe[src*="//www.riddle.com/"] {
+    border: 1px solid #f7f7f7;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    display: block !important;
+    margin: 0 auto !important;
+    width: 90vw !important;
+}
+
+.xblock.xblock-student_view.xblock-student_view-html.xmodule_display.xmodule_HtmlBlock.xblock-initialized iframe[src*="//player.vimeo.com/"]:not([title="Video Embed"]) {
+    background: #000;
+    border-radius: 6px;
+    display: block !important;
+    height: 90vw !important;
+    margin: 0 auto !important;
+    width: 90vw !important;
+}
+
+
+/* <genially-xblock> */
+.genially_iframe_container {
+    border: 1px solid #f7f7f7;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    margin: 0 auto;
+    max-width: 90vw;
+}
+/* </genially-xblock> */
+
+
+/* <vimeo-xblock> */
+.xblock.xblock-student_view.xblock-student_view-vimeo .vimeo_block {
+    background: #0025A5;
+    color: #fff;
+    padding: 20px 0 32px 0;
+    position: relative;
+}
+.xblock.xblock-student_view.xblock-student_view-vimeo .vimeo_block::after {
+    background: #f0f0f0;
+    bottom: 0;
+    content: "";
+    height: 72px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+.xblock.xblock-student_view.xblock-student_view-vimeo .vimeo_block h4 {
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+}
+.xblock.xblock-student_view.xblock-student_view-vimeo .vimeo_block h4,
+.xblock.xblock-student_view.xblock-student_view-vimeo .vimeo_block p {
+    border: 0 !important;
+    color: #fff !important;
+    display: block;
+    margin: 0 auto !important;
+    padding: 0 0 10px 0 !important;
+    width: 90vw;
+}
+.xblock.xblock-student_view.xblock-student_view-vimeo .vimeo_block h4:empty,
+.xblock.xblock-student_view.xblock-student_view-vimeo .vimeo_block p:empty {
+    padding-bottom: 0 !important;
+}
+.xblock.xblock-student_view.xblock-student_view-vimeo .vimeo_block iframe {
+    background: #000;
+    border-radius: 6px;
+    display: block;
+    height: 90vw;
+    margin: 10px auto 0;
+    position: relative;
+    width: 90vw;
+    z-index: 2;
+}
+/* </vimeo-xblock> */
+
+
+/* <audio-xblock> */
+.xblock.xblock-student_view.xblock-student_view-audio .audio_block {
+    background: #0025A5;
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+}
+.xblock.xblock-student_view.xblock-student_view-audio .audio_block h4,
+.xblock.xblock-student_view.xblock-student_view-audio .audio_block p {
+    border: 0 !important;
+    color: #fff !important;
+    display: block;
+    margin: 0 auto !important;
+    width: 90vw;
+}
+.xblock.xblock-student_view.xblock-student_view-audio .audio_block h4 {
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+}
+.xblock.xblock-student_view.xblock-student_view-audio .audio_block h4,
+.xblock.xblock-student_view.xblock-student_view-audio .audio_block p,
+.xblock.xblock-student_view.xblock-student_view-audio .audio_block audio {
+    margin: 0 auto !important;
+    padding: 0 0 10px 0 !important;
+}
+.xblock.xblock-student_view.xblock-student_view-audio .audio_block h4:empty,
+.xblock.xblock-student_view.xblock-student_view-audio .audio_block p:empty {
+    padding: 0 !important;
+}
+.xblock.xblock-student_view.xblock-student_view-audio .audio_block audio {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 0 !important;
+    position: relative;
+    width: 90vw;
+}
+/* </audio-xblock> */
+
+
+
+/* <problem-block> */
+.xblock.xblock-student_view.xblock-student_view-problem .problems-wrapper {
+    padding: 10px;
+}
+.xblock.xblock-student_view.xblock-student_view-problem .problems-wrapper .problem-header {
+    display: none;
+}
+.xblock.xblock-student_view.xblock-student_view-problem .problems-wrapper .problem-header {
+    display: none;
+}
+.xblock.xblock-student_view.xblock-student_view-problem .problems-wrapper .action {
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.xblock.xblock-student_view.xblock-student_view-problem .problems-wrapper .problem-progress {
+    display: none;
+}
+/* </problem-block> */
+
+
+
+/* <lti-block> */
+.xblock.xblock-student_view.xblock-student_view-lti .problem-header {
+    display: none;
+}
+.xblock.xblock-student_view.xblock-student_view-lti .lti {
+    background: #fff;
+    border: 1px solid #f7f7f7;
+    box-sizing: border-box;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    display: block;
+    margin: 0 10px;
+    padding: 20px;
+}
+.xblock.xblock-student_view.xblock-student_view-lti .lti iframe {
+    display: block !important;
+    margin: 0 auto !important;
+    width: 100%;
+}
+/* </lti-block> */
+
+
+
+/* Swiper styling */
+
+.swiper-pagination-bullet:only-child {
+    display: none;
+}
+.swiper-pagination-bullet {
+    background: #aaa;
+    opacity: 1;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #007aff;
+    opacity: 1;
 }
