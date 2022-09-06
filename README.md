@@ -7,4 +7,4 @@
 
 Please refer to [Open edX Custom Theming Tutorial](https://blog.lawrencemcdaniel.com/open-edx-custom-theming-tutorial/) for details on how to work with this repository.
 
-Or, follow this link to read the limited documentation that is provided in this repo: [Comprehensive Theming](./custom-theme/README.rst)
+Or, follow this link to read the limited documentation that is provided in this repo: [Comprehensive Theming](./themes/README.rst)
